@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoda Speak Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <main class="container">
+      <header class="header">
+        <h1><span class="sw">Yoda</span> Speak Translator</h1>
+        <p class="tag">“Translate to Yoda speak, we shall.”</p>
+      </header>
+
+      <section class="panel">
+        <label for="inputText" class="label">Enter text</label>
+        <textarea id="inputText" class="input" rows="5" placeholder="Type text to translate into Yoda speak..."></textarea>
+
+        <div class="controls">
+          <button id="translateBtn" class="btn">Translate</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <label class="label" for="outputText">Output</label>
+        <div id="status" class="status" aria-live="polite"></div>
+        <textarea id="outputText" class="output" rows="6" readonly placeholder="Your Yoda translation will appear here..."></textarea>
+      </section>
+
+      <footer class="footer">
+        <span>May the code be with you.</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
